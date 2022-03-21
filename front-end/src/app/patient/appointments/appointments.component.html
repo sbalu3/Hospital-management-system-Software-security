@@ -1,0 +1,117 @@
+<div fxLayout="column" class="w-100 h-100 hospital-button" fxLayoutAlign="start" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutAlign="start center" (click)="backToHome()" class="back-button">
+        <button class="back" mat-button fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon>keyboard_arrow_left</mat-icon><span>Back</span>
+        </button>
+    </div>
+    <div fxLayout="row" class=" w-100 h-100" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <!-- <div class="welcome-msg" fxLayout="row" fxFlex="50">
+            <strong>List of Appointments</strong>
+        </div> -->
+        <mat-tab-group class="w-75 h-100">
+            <mat-tab label="Past Appointments" class="welcome-msg">
+                <div fxLayout="column" class="w-100" fxLayoutAlign="center center">
+                    <mat-accordion class="w-100 h-25 m-1">
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    3/20/2022 3:30 PM
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Dr.Sehwal(Cardiologist)
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <div fxLayout="column">
+                                <div class="h6">Diagnosis</div>
+                                <div><i>Symptoms:</i> Fever, Headache, Nausea, Stomach Pain, Feeling Tired, Body pains
+                                </div>
+                                <div><i>Previous Medical History:</i> Minor Lung surgery</div>
+                            </div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <mat-accordion class="w-100 h-25 m-1">
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    3/20/2022 3:30 PM
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Dr.Sehwal(Cardiologist)
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <div fxLayout="column">
+                                <div class="h6">Diagnosis</div>
+                                <div><i>Symptoms:</i> Fever, Headache, Nausea, Stomach Pain, Feeling Tired, Body pains
+                                </div>
+                                <div><i>Previous Medical History:</i> Minor Lung surgery</div>
+                            </div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <mat-accordion class="w-100 h-25 m-1">
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    3/20/2022 3:30 PM
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Dr.Sehwal(Cardiologist)
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <div fxLayout="column">
+                                <div class="h6">Diagnosis</div>
+                                <div><i>Symptoms:</i> Fever, Headache, Nausea, Stomach Pain, Feeling Tired, Body pains
+                                </div>
+                                <div><i>Previous Medical History:</i> Minor Lung surgery</div>
+                            </div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <mat-accordion class="w-100 h-25 m-1">
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    3/20/2022 3:30 PM
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Dr.Sehwal(Cardiologist)
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <div fxLayout="column">
+                                <div class="h6">Diagnosis</div>
+                                <div><i>Symptoms:</i> Fever, Headache, Nausea, Stomach Pain, Feeling Tired, Body pains
+                                </div>
+                                <div><i>Previous Medical History:</i> Minor Lung surgery</div>
+                            </div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+            </mat-tab>
+            <mat-tab label="Future Appointments" class="welcome-msg">
+                <div fxLayout="column" class="w-100" fxLayoutAlign="center center">
+                    <mat-card class="w-100 h-25 m-1 ">
+                        <mat-card-subtitle>3/20/2022 3:30 PM</mat-card-subtitle>
+                        <mat-card-title>Dr.Sehwal(Cardiologist)</mat-card-title>
+                    </mat-card>
+                    <mat-card class="w-100 h-25 m-1">
+                        <mat-card-subtitle>3/20/2022 3:30 PM</mat-card-subtitle>
+                        <mat-card-title>Dr.Sehwal(Cardiologist)</mat-card-title>
+                    </mat-card>
+                    <mat-card class="w-100 h-25 m-1">
+                        <mat-card-subtitle>3/20/2022 3:30 PM</mat-card-subtitle>
+                        <mat-card-title>Dr.Sehwal(Cardiologist)</mat-card-title>
+                    </mat-card>
+                    <mat-card class="w-100 h-25 m-1">
+                        <mat-card-subtitle>3/20/2022 3:30 PM</mat-card-subtitle>
+                        <mat-card-title>Dr.Sehwal(Cardiologist)</mat-card-title>
+                    </mat-card>
+                    <mat-card class="w-100 h-25 m-1">
+                        <mat-card-subtitle>3/20/2022 3:30 PM</mat-card-subtitle>
+                        <mat-card-title>Dr.Sehwal(Cardiologist)</mat-card-title>
+                    </mat-card>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+
+
+</div>

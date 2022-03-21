@@ -1,0 +1,31 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayoutGap="10px" class="font-weight-bold">
+        <h2>Secure Hospital System</h2>
+    </div>
+    <button mat-raised-button class="hospital-button fadeInDown" (click)="showLogin=!showLogin" *ngIf="!showLogin">
+        <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center"><span>Login</span>
+            <mat-icon>arrow_right_alt</mat-icon>
+        </div>
+    </button>
+    <form [formGroup]="loginForm" *ngIf="showLogin" class="w-75 fadeInDown">
+        <div class="form-group">
+            <div fxLayout="column" fxLayoutGap="10px">
+                <div fxLayout="column" fxLayoutGap="5px">
+                    <label for="user-name" class="form-label">Username: </label>
+                    <input id="user-name" type="text" formControlName="userName" class="form-control form-control"
+                        placeholder="Enter Username">
+                </div>
+                <div fxLayout="column" fxLayoutGap="5px">
+                    <label for="password" class="form-label">Password: </label>
+                    <input id="password" type="text" formControlName="password" class="form-control form-control"
+                        placeholder="Enter Password">
+                </div>
+                <button mat-raised-button class="hospital-button w-50" (click)="continueToLogin()">
+                    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center center"><span>Continue to Login</span>
+                        <mat-icon>arrow_right_alt</mat-icon>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

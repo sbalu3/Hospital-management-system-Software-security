@@ -1,0 +1,32 @@
+<div fxLayout="column" class="w-100 h-100 hospital-button">
+    <div fxLayout="row" fxFlex="20" class=" w-100 h-100" fxLayoutGap="10px">
+        <div class="p-3 mb-2 rounded w-100 patient-function" fxFlex="10"></div>
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button
+            fxFlex="10" (click)="navigateToSection('appointments')">Appointments</button>
+        <!-- <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button
+            fxFlex="10">Diagnosis</button> -->
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button
+            fxFlex="10" (click)="navigateToSection('prescription')">Prescription</button>
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button fxFlex="10" (click)="navigateToSection('lab-tests')">Lab
+            Reports</button>
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button fxFlex="13">Medical
+            Insurance</button>
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button
+            fxFlex="13" (click)="navigateToSection('transactions')">Transactions</button>
+        <button class="p-3 mb-2 rounded w-75 patient-function" fxLayoutAlign="center" mat-button
+            fxFlex="10" (click)="navigateToSection('profile')">Profile</button>
+    </div>
+    <div class="welcome-msg" fxLayout="row">
+        Welcome &nbsp;<strong>"Sandhya Balu"</strong>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-evenly center" class="h-100">
+        <div class="h2" fxFlex="40" fxLayout="column">
+            <div class="w-75 hightlight-content" fxLayout="row" fxLayoutAlign="center">We take care of your health</div>
+            <div class="hightlight-content"><button mat-button class="h4 book-appointment" (click)="bookAppointment()">Book an appointment <mat-icon>arrow_right_alt</mat-icon></button></div>
+        </div>
+        <div fxFlex="100" class="w-75 h-100" fxLayoutAlign="space-evenly">
+            <img src="../../assets/images/doctor.webp" class="w-50 h-75 m-4 doctor-image rounded-circle">
+        </div>
+    </div>
+
+</div>
