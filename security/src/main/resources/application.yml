@@ -1,0 +1,11 @@
+#spring:
+#  datasource:
+#    username: sql3480688
+#    password: 5QcmDUEAi6
+#    url: jdbc:mysql://sql3.freemysqlhosting.net:3306/sql3480688
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
