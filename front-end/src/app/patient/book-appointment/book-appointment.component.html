@@ -1,0 +1,49 @@
+<div class="w-100 h-100 hospital-button" fxLayout="column">
+    <div class="w-75 h-100 bg-white container book-container shadow-sm">
+        <div fxLayout="column" class="m-4" fxLayoutGap="15px">
+            <div fxLayout="row" fxLayoutAlign="start center" (click)="backToHome()">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+                <div class="back">Back</div>
+            </div>
+           
+            <div fxLayout="row">
+                <mat-icon>assignment</mat-icon>
+                <div class="appointment">Book Appointment</div>
+            </div>
+            <form class="form-inline waves-light" mdbWavesEffect>
+                <div class="md-form mt-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search for a doctor">
+                </div>
+            </form>
+            <div fxLayoutAlign="center">Or</div>
+            <mat-form-field appearance="fill">
+                <mat-label>Select speciality</mat-label>
+                <mat-select>
+                    <mat-option value="cardiology">Cardiology</mat-option>
+                    <mat-option value="gynacology">Gynacology</mat-option>
+                    <mat-option value="dermatology">Dermatology</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <form [formGroup]="bookForm">
+                <mat-form-field appearance="fill">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </form>
+            <div>Select Time</div>
+            <mat-grid-list cols="4" rowHeight="50px">
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>10:00 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>10:00 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+                <mat-grid-tile><button mat-stroked-button>9:30 AM</button></mat-grid-tile>
+            </mat-grid-list>
+            <button mat-raised-button class="h4 book-appointment w-50" fxLayoutAlign="end">Confirm appointment</button>
+        </div>
+    </div>
+</div>
